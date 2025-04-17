@@ -1,2 +1,2 @@
 # Yummit
-Food ording website
+Food ordering website
