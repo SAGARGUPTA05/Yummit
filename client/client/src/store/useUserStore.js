@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { data } from "react-router-dom";
 
-const API_END_POINT = "http://localhost:3000/api/v1/user";
+const API_END_POINT = "https://yummit.onrender.com/api/v1/user";
 axios.defaults.withCredentials = true;
 
 export const useUserStore = create()(
