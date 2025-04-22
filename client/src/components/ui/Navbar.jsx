@@ -171,7 +171,7 @@ function Navbar() {
           <div className={`w-full h-full ${theme=="light" ?'bg-white' :'bg-[#121212]'}  pt-16`}>
             <div className="w-full h-full flex flex-col gap-y-8">
               <div className="flex items-center justify-between px-3">
-                <h5 className={`text-2xl font-bold ${theme=="light" ?'text-black' :'text-[#E0E0E0]'} `}>FoodPlus</h5>
+                <h5 className={`text-2xl font-bold ${theme=="light" ?'text-black' :'text-[#E0E0E0]'} `}>Yummit</h5>
                 <button
                   onClick={() => setTheme(theme === "light" ? "dark" : "light")}
                   className="flex items-center gap-2 px-3 py-2 bg-gray-200 rounded-md hover:bg-gray-300 transition"
@@ -240,7 +240,7 @@ function Navbar() {
                         />
                       </div>
                     </div>
-                    <div className={`${theme=="light" ?'text-black' :'text-white'}font-extrabold`}>Food Plus</div>
+                    <div className={`${theme=="light" ?'text-black' :'text-white'}font-extrabold`}>Yummit</div>
                   </div>
                   <div className="flex gap-x-6 px-4 sm:mt-16">
                     <button onClick={logout} className="btn-orange w-full">

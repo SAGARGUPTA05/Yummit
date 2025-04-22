@@ -30,7 +30,7 @@ const sendWelcomeEmail = async (email, name) => {
     const response = await resend.emails.send({
       from: sender,
       to: [email],
-      subject: "Welcome to Foodplus",
+      subject: "Welcome to Yummit",
       html: generateWelcomeEmailHtml(name),
     });
     

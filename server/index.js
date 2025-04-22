@@ -11,7 +11,6 @@ const RestaurantRoute = require("./routes/restaurantRoute");
 const MenuRoute = require("./routes/menuRoute");
 const OrderRoute = require("./routes/orderRoute");
 const webhookRoute=require("./routes/webhookRoute")
-const path=require("path")
 
 // Load environment variables
 dotenv.config();
@@ -19,7 +18,7 @@ dotenv.config();
 
 events.EventEmitter.defaultMaxListeners = 15; // Increase limit (adjust if needed)
 
-const DIRNAME=path.resolve();
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 //webhook
@@ -45,11 +44,11 @@ app.use("/api/v1/restaurant", RestaurantRoute);
 app.use("/api/v1/menu", MenuRoute);
 //API for order status
 app.use("/api/v1/order", OrderRoute);
+//API for chat bot
+app.use("/api/v1/chatbot", require("./routes/chatbot"));
 
-app.use(express.static(path.join(DIRNAME,"/client/dist")));
-app.use("*",(_,res)=>{
-  res.sendFile(path.resolve(DIRNAME,"client","dist","index.html"));
-})
+
+
 
 // Connect to Database and Start Server
 connectDB()

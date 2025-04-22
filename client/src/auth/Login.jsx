@@ -45,7 +45,7 @@ function Login() {
     
     <div
       className={`flex items-center justify-center min-h-screen w-screen px-4 ${
-        isDark ? "bg-[#121212] text-[#E0E0E0]" : "bg-white text-black"
+        isDark ? "bg-[#121212] text-[#E0E0E0]" : "bg-gradient-to-b from-orange-100 via-yellow-100 to-white  text-black"
       }`}
     >
       <form
@@ -57,7 +57,7 @@ function Login() {
         }`}
       >
         <div className="mb-4 text-center">
-          <h1 className="font-bold text-2xl">Foodplus</h1>
+          <h1 className="font-bold text-2xl">Yummit</h1>
         </div>
 
         {/* Email Input */}

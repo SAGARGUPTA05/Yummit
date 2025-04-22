@@ -32,10 +32,11 @@ const restaurantSchema = new mongoose.Schema(
       default: "",
       required:true, // Provide a default empty string
     },
-    menus: {
-      type: [mongoose.Schema.Types.ObjectId], // Store multiple menu items as an array
-      ref:"Menu",
-    },
+    menus: [{
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Menu"
+    }],
+    
   },
   { timestamps: true } // Adds createdAt and updatedAt fields
 );

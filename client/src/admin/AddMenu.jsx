@@ -24,6 +24,8 @@ function AddMenu() {
     price: "",
     image: null,
   });
+  
+
 
   const changeHandler = (e) => {
     const { name, value, type } = e.target;

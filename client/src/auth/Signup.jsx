@@ -59,7 +59,7 @@ function Signup() {
     
     <div
       className={`flex items-center justify-center min-h-screen w-screen ${
-        isDark ? "bg-[#121212] text-[#E0E0E0]" : "bg-white text-black"
+        isDark ? "bg-[#121212] text-[#E0E0E0]" : "bg-gradient-to-b from-orange-100 via-yellow-100 to-white text-black"
       }`}
     >
       <form
@@ -71,7 +71,7 @@ function Signup() {
         }`}
       >
         <div className="mb-4">
-          <h1 className="font-bold text-2xl text-center">Foodplus</h1>
+          <h1 className="font-bold text-2xl text-center">Yummit</h1>
         </div>
 
         {/* Full Name */}

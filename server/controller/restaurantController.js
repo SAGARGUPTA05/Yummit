@@ -66,7 +66,7 @@ const getRestaurant = async (req, res) => {
     if (!restaurant || restaurant.length === 0) {
       return res.status(400).json({
         success: false,
-        
+        restaurant:[],
         message: "Restaurant not found",
       });
     }
@@ -227,8 +227,13 @@ const getSingleRestaurant = async (req, res) => {
     const restaurantId = req.params.id;
     const restaurant = await Restaurant.findById(restaurantId).populate({
       path: "menus",
-      options: { createdAt: -1 },
+      select: "name description price image", // Ensuring we select the correct fields
+      options: { sort: { createdAt: -1 } },
     });
+    
+    console.log(restaurant);  // Check the populated menus
+    
+    
     if (!restaurant) {
       return res.status(400).json({
         success: false,

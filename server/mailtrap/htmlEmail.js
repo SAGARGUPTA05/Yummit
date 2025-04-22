@@ -69,7 +69,7 @@
                 <p>If you did not request this verification, please ignore this email.</p>
             </div>
             <div class="footer">
-                <p>&copy; 2025 Food Plus. All rights reserved.</p>
+                <p>&copy; 2025 Yummit. All rights reserved.</p>
             </div>
         </div>
     </body>
@@ -115,17 +115,17 @@
             <body>
               <div class="email-container">
                 <div class="email-header">
-                  <h1>Welcome to  Foodplus!</h1>
+                  <h1>Welcome to  Yummit!</h1>
                 </div>
                 <div class="email-body">
                   <p>Hi ${name},</p>
                   <p>Congratulations! Your email has been successfully verified.</p>
-                  <p>We are excited to have you on board at  Foodplus. Explore our platform and enjoy our services.</p>
+                  <p>We are excited to have you on board at  Yummit. Explore our platform and enjoy our services.</p>
                   <p>If you have any questions or need assistance, feel free to reach out to us.</p>
-                  <p>Best Regards,<br/>The Food Plus Team</p>
+                  <p>Best Regards,<br/>The Yummit Team</p>
                 </div>
                 <div class="email-footer">
-                  <p>&copy; 2025 Food Plus. All rights reserved.</p>
+                  <p>&copy; 2025 Yummit. All rights reserved.</p>
                 </div>
               </div>
             </body>
@@ -188,10 +188,10 @@
               <p>We received a request to reset your password. Click the button below to reset it.</p>
               <a href="${resetURL}" class="button">Reset Password</a>
               <p>If you didn't request a password reset, please ignore this email.</p>
-              <p>Thank you,<br/>The Food Plus Team</p>
+              <p>Thank you,<br/>The Yummit Team</p>
             </div>
             <div class="email-footer">
-              <p>&copy; 2025 Food Plus. All rights reserved.</p>
+              <p>&copy; 2025 Yummit. All rights reserved.</p>
             </div>
           </div>
         </body>
@@ -243,10 +243,10 @@
               <p>Hi,</p>
               <p>Your password has been successfully reset. You can now log in with your new password.</p>
               <p>If you did not request this change, please contact our support team immediately.</p>
-              <p>Thank you,<br/>The Food Plus Team</p>
+              <p>Thank you,<br/>The Yummit Team</p>
             </div>
             <div class="email-footer">
-              <p>&copy; 2025 Food Plus. All rights reserved.</p>
+              <p>&copy; 2025 Yummit. All rights reserved.</p>
             </div>
           </div>
         </body>

@@ -64,7 +64,7 @@ function VerifyEmail() {
         >
     <div
       className={`flex items-center justify-center h-screen w-screen ${
-        isDark ? "bg-[#121212] text-[#E0E0E0]" : "bg-white text-black"
+        isDark ? "bg-[#121212] text-[#E0E0E0]" : "bg-gradient-to-b from-orange-100 via-yellow-100 to-white text-black"
       }`}
     >
       <div

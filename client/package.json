@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -23,7 +23,7 @@
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.2.0",
     "react-toastify": "^11.0.5",
-    "server": "file:../..",
+    "server": "file:..",
     "shadcn-ui": "^0.9.5",
     "sooner": "^1.1.1",
     "zod": "^3.24.2",

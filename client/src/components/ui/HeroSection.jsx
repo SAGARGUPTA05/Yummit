@@ -11,6 +11,7 @@ import momo from "../../assets/momo.avif";
 import leaf from "../../assets/leaf.avif";
 import tomato from "../../assets/tomato.avif";
 import ribbon from "../../assets/ribbonleft.avif";
+import FloatingChatbot from "./FloatingChatbot";
 
 function HeroSection() {
   const { theme } = useThemeStore();
@@ -159,7 +160,7 @@ function HeroSection() {
             />
           </motion.div>
         </div>
-
+      <FloatingChatbot ></FloatingChatbot>
         {/* Restaurant Cards Section */}
         <div className="max-w-7xl mx-auto md:p-10 px-4">
           <h2 className={`text-2xl font-bold mb-6 ${textColor}`}>
