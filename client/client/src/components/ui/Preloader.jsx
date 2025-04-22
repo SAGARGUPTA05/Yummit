@@ -16,8 +16,8 @@ const Preloader = () => {
   if (!show) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-gradient-to-b from-orange-100 via-yellow-100 to-white dark:from-[#2c1e00] dark:via-[#4a3200] dark:to-[#121212] transition-colors duration-500">
-      <div className="flex gap-6 text-6xl md:text-8xl font-extrabold tracking-widest">
+    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center px-4 text-center bg-gradient-to-b from-orange-100 via-yellow-100 to-white dark:from-[#2c1e00] dark:via-[#4a3200] dark:to-[#121212] transition-colors duration-500">
+      <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 text-4xl sm:text-6xl md:text-8xl font-extrabold tracking-widest">
         {["Y", "U", "M", "M", "I", "T"].map((char, index) => (
           <div
             key={index}
@@ -32,13 +32,13 @@ const Preloader = () => {
           </div>
         ))}
       </div>
-      <div className="mt-6 flex gap-3 text-3xl md:text-5xl animate-pulse">
+      <div className="mt-4 sm:mt-6 flex flex-wrap justify-center gap-2 sm:gap-3 text-2xl sm:text-3xl md:text-5xl animate-pulse">
         {foodEmojis.map((emoji, index) => (
           <span key={index}>{emoji}</span>
         ))}
       </div>
-      <p className="mt-4 text-lg md:text-xl font-medium text-orange-700 drop-shadow">
-        Your hunger solution is on the way...............
+      <p className="mt-4 text-base sm:text-lg md:text-xl font-medium text-orange-700 drop-shadow max-w-xs sm:max-w-md md:max-w-lg">
+        Your hunger solution is on the way...
       </p>
     </div>
   );
