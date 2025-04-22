@@ -2,6 +2,7 @@
   "name": "client",
   "private": true,
   "version": "0.0.0",
+  "type":"module",
   "scripts": {
     "dev": "nodemon server/index.js",
     "stripe":"stripe listen --forward-to localhost:3000/api/v1/order/webhook",
