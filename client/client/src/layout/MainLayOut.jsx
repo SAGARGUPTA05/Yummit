@@ -11,7 +11,7 @@ function MainLayOut() {
         
         <header><Navbar></Navbar></header>
         <div className={`${theme=="light" ?'bg-gradient-to-b from-orange-100 via-yellow-100 to-white' :'bg-[#121212]'}  p-2 pt-[2rem] w-full  `}><Outlet></Outlet></div>
-        <footer className='w-screen '>
+        <footer className='md:w-screen w-full '>
             <Footer></Footer>
         </footer>
     </div>
