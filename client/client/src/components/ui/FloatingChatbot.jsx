@@ -20,7 +20,7 @@ const FloatingChatbot = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/v1/chatbot/recommend",
+        "https://yummit.onrender.com/api/v1/chatbot/recommend",
         { message: input }
       );
       setChat((prev) => [...prev, { sender: "bot", text: res.data.reply }]);
