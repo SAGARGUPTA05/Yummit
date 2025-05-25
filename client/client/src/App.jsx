@@ -19,19 +19,18 @@ import Restaurant from "./admin/Restaurant";
 import AddMenu from "./admin/AddMenu";
 import Orders from "./admin/Orders";
 import Success from "./components/ui/Success";
-
-import Loading from "./components/ui/Loading";
 import Preloader from "./components/ui/Preloader"; // ✅ Import Preloader
 
 import { useUserStore } from "./store/useUserStore";
 import { useThemeStore } from "./store/useThemeStore";
+import ShowPage from "./components/ui/ShowPage";
 
 // ✅ Protected route checks
 const ProtectedRoutes = ({ children }) => {
   const { isAuthenticated, user } = useUserStore();
 
   if (!isAuthenticated) {
-    return <Navigate to={"/login"} replace />;
+    return <Navigate to={"/logout-page"} replace />;
   }
   if (!user?.isverified) {
     return <Navigate to="/verify-email" replace />;
@@ -50,7 +49,7 @@ const AuthenticatedUser = ({ children }) => {
 const AdminRoute = ({ children }) => {
   const { isAuthenticated, user } = useUserStore();
   if (!isAuthenticated) {
-    return <Navigate to={"/login"} replace />;
+    return <Navigate to={"/logout-page"} replace />;
   }
   if (!user?.admin) {
     return <Navigate to="/" replace />;
@@ -118,6 +117,12 @@ function App() {
             </AuthenticatedUser>
           }
         />
+        <Route
+        path="logout-page" element={
+          
+            <ShowPage></ShowPage>
+          
+        }/>
         <Route
           path="/signup"
           element={
